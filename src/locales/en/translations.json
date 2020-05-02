@@ -1,4 +1,10 @@
 {
+  "contacts": "contacts",
+  "current": "current",
+  "formacao": "formacao",
+  "about": {
+    "desc": "A front end developer and UX enthusiast, I strive to deliver the best solutions for the web on whatever devices the users may have. I am always keeping up with the latest in html5 and css3 to be able the create the best solutions while keeping it light-weight and cross-browser and multiple devices."
+  },
   "site": {
     "Gatsby Default Starter": "Gatsby Default Starter",
     "footer": "Built with Gatsby"

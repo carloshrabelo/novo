@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import LanguageMenu from './languageMenu'
+import LanguageMenu from "./languageMenu"
 
 const Header = ({ siteTitle }) => (
   <header
@@ -10,19 +10,19 @@ const Header = ({ siteTitle }) => (
       marginBottom: `1.45rem`,
       display: `flex`,
       justifyContent: `center`,
-      alignItems: `center`
+      alignItems: `center`,
     }}
   >
     <div
       style={{
         padding: `10px`,
         maxWidth: 960,
-        textAlign: `center`
+        textAlign: `center`,
       }}
     >
-      <h1 
-        style={{ 
-          margin: `20px 100px`
+      <h1
+        style={{
+          margin: `20px 100px`,
         }}
       >
         <Link
@@ -36,7 +36,7 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
     </div>
-    <LanguageMenu></LanguageMenu>
+    <LanguageMenu />
   </header>
 )
 

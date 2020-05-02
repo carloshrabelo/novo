@@ -1,0 +1,37 @@
+[
+  {
+    "company": "PagSeguro",
+    "role": "Analista Desenvolvedor Web",
+    "date": ["07-01-2018"],
+    "description": [
+      "Desenvolvimento focado em entrega contínua numa das Plataformas de Atendimento PagSeguro, utilizada como base pelos atendentes no auxílio aos clientes.",
+      "Desenvolvimento colaborativo da biblioteca de componentes visuais da Pagseguro."
+    ]
+  },
+  {
+    "company": "AIS Digital",
+    "role": "Analista Desenvolvedor Web",
+    "date": ["01-01-2016", "06-01-2018"],
+    "description": [
+      "Desenvolvimento de sistemas em SPA com Angular / Vue para clientes do exterior, principalmente Suiça."
+    ]
+  },
+  {
+    "company": "CDS - Condomínio de Soluções",
+    "role": "Analista Desenvolvedor Web/GIS",
+    "date": ["07-01-2015", "09-01-2016"],
+    "description": [
+      "Desenvolvimento de soluções integradas aos sistemas de BI, com a disponibilização de inteligência geográfica através de painéis.",
+      "Customizações de sistemas para melhor adequar a identidade visual e garantir melhor experiência ao usuário."
+    ]
+  },
+  {
+    "company": "CDS - Condomínio de Soluções",
+    "role": "Estágio/Trainee Web / GIS",
+    "date": ["06-01-2014", "07-01-2015"],
+    "description": [
+      "Trabalho com APIs de mapas em JavaScript da ESRI e MapViewer (Oracle), provendo novas ideias e visões customizadas através de representações geográficas.",
+      "Integração de informações provenientes do BI (OBIEE e Pentaho) com aplicações customizadas."
+    ]
+  }
+]

@@ -1,4 +1,4 @@
-const path = require('path')
+const path = require("path")
 
 module.exports = {
   siteMetadata: {
@@ -7,6 +7,7 @@ module.exports = {
     author: `@CathyHuangTw`,
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -30,18 +31,31 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-root-import',
+      resolve: "gatsby-plugin-root-import",
       options: {
-        src: path.join(__dirname, 'src'),
-        i18n: path.join(__dirname, 'src/i18n'),
-        images: path.join(__dirname, 'src/images')
-      }
+        src: path.join(__dirname, "src"),
+        i18n: path.join(__dirname, "src/i18n"),
+        images: path.join(__dirname, "src/images"),
+      },
     },
     {
       resolve: `gatsby-plugin-layout`,
       options: {
-        component: `${__dirname}/src/components/layout.js`
-      }
+        component: `${__dirname}/src/components/layout.js`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google: [
+            {
+              family: "Nunito",
+              variants: ["400", "600"],
+            },
+          ],
+        },
+      },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

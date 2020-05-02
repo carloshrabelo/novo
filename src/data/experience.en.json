@@ -1,0 +1,29 @@
+[
+  {
+    "role": "Web Developer Analyst",
+    "description": [
+      "Development focused on continuous delivery on one of the PagSeguro Service Platforms, used as a basis by the attendants in assisting customers.",
+      "Collaborative development of Pagseguro's library of visual components."
+    ]
+  },
+  {
+    "role": "Web Developer Analyst",
+    "description": [
+      "Development of SPA systems with Angular / Vue for customers from abroad, mainly Switzerland."
+    ]
+  },
+  {
+    "role": "Web Developer / GIS Analyst",
+    "description": [
+      "Development of integrated solutions to BI systems, with the provision of geographic intelligence through panels.",
+      "Customizations of systems to better adapt the visual identity and guarantee a better user experience."
+    ]
+  },
+  {
+    "role": "Internship / Web Trainee / GIS",
+    "description": [
+      "I work with JavaScript map APIs from ESRI and MapViewer (Oracle), providing new ideas and customized views through geographic representations.",
+      "Integration of information from BI (OBIEE and Pentaho) with customized applications."
+    ]
+  }
+]

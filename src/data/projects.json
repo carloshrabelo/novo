@@ -1,0 +1,22 @@
+[
+  {
+    "role": "Ada - PagSeguro",
+    "about": "A plataforma de atendimento Ada disponibiliza informações sensíveis de clientes aos atendentes, vindas de diversos setores da empresa PagSeguro.",
+    "description": [
+      "Desenvolvimento com React / Redux sobre NodeJs com arquitetura modular",
+      "Criação/Integração WebServices em NodeJs."
+    ]
+  },
+  {
+    "role": "Identificação Biométrica (TSE)",
+    "about": "Projeto de combate a fraudes eleitorais, por meio de análises biométricas.",
+    "description": [
+      "Customização do OBIEE.",
+      "Criação de webapps integradas ao OBIEE."
+    ]
+  },
+  {
+    "role": "Metroplan",
+    "about": "Desenvolvimento de aplicações SIGWeb integradas com Oracle Apex para disponibilização de informações geoespaciais dos projetos aulinor e baixo cai."
+  }
+]
