@@ -73,7 +73,7 @@ export default () => {
         <Li>
           <Link to="/">
             <FaFolderOpen />
-            Portifoliio
+            Portifolio
           </Link>
         </Li>
         <About>
