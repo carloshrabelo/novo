@@ -2,22 +2,15 @@
   "contacts": "contacts",
   "current": "current",
   "formacao": "formacao",
+  "portuguese": "Portuguese",
+  "english": "English",
+  "native": "Native",
+  "intermediate": "Intermediate",
+  "curriculum": "Curriculum",
   "about": {
-    "desc": "A front end developer and UX enthusiast, I strive to deliver the best solutions for the web on whatever devices the users may have. I am always keeping up with the latest in html5 and css3 to be able the create the best solutions while keeping it light-weight and cross-browser and multiple devices."
-  },
-  "site": {
-    "Gatsby Default Starter": "Gatsby Default Starter",
-    "footer": "Built with Gatsby"
-  },
-  "home": {
-    "test": "hello",
-    "title": "Hi people",
-    "content": "Welcome to your new Gatsby site.\nNow go build something great.",
-    "link": "Go to page 2"
-  },
-  "page2": {
-    "title": "Hi from the second page",
-    "content": "Welcome to page 2",
-    "link": "Go back to the homepage"
+    "desc": "Front-end engineer and zoukeiro in his spare time. Like dance, coding is also an art form.",
+    "relationship": "Single",
+    "nationality": "Brazilian",
+    "years": "years"
   }
 }

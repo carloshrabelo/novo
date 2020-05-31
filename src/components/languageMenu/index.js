@@ -22,7 +22,10 @@ const Btn = styled.a`
   padding: 0 0.5rem;
   text-decoration: none;
   cursor: pointer;
-  opacity: ${props => (props.active ? 1 : 0.5)};
+  opacity: ${({ active }) => (active ? 1 : 0.5)};
+  img {
+    height: 1rem;
+  }
   &:hover {
     opacity: 1;
     img {
@@ -30,16 +33,13 @@ const Btn = styled.a`
       border-radius: 10%;
     }
   }
-  img {
-    height: 1rem;
-  }
 `
 
 const LanguageMenu = ({ className }) => {
   const { i18n } = useTranslation()
   const [values, setValues] = useState(i18n.language || i18n.fallbackLng)
 
-  const handleChange = value => {
+  const handleChange = (value) => {
     i18n.changeLanguage(value)
     setValues(value)
   }

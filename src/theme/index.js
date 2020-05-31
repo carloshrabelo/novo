@@ -2,7 +2,7 @@ export default {
   bg: "#f4f4f4",
   padding: "1rem",
   colors: {
-    primary: "#00A3E1",
+    primary: "var(--color-primary)",
     persianGreen: "#06B49A",
     lightBlue: "#AFDBD2",
     onyx: "#36313D",

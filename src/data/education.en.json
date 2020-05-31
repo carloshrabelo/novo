@@ -1,18 +1,18 @@
 [
   {
-    "institution": "Gestão de TI - Senac",
+    "institution": "IT Management - Senac",
     "date": ["01-01-2011", "01-01-2013"]
   },
   {
     "institution": "Escola Técnica de Brasília",
     "courses": [
-      { "name": "Java II - Java para web", "date": "01-01-2011" },
-      { "name": "Java I - Java com Banco de dados", "date": "01-01-2010" },
+      { "name": "Java II - Java for the web", "date": "01-01-2011" },
+      { "name": "Java I - Java with Database", "date": "01-01-2010" },
       {
-        "name": "Programação orientada a objetos em Java",
+        "name": "object-oriented programming in Java",
         "date": "01-01-2010"
       },
-      { "name": "Modelagem de dados com MySQL e Acess", "date": "01-01-2010" }
+      { "name": "Data modeling with MySQL and Acess", "date": "01-01-2010" }
     ]
   }
 ]

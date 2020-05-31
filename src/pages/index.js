@@ -1,6 +1,6 @@
 import React from "react"
 import { useTranslation } from "react-i18next"
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 import {
   FaFlag,
   FaMapMarkedAlt,
@@ -8,6 +8,7 @@ import {
   FaAt,
   FaLinkedin,
 } from "react-icons/fa"
+import media from "styled-media-query"
 
 import Formation from "../components/Formation"
 import Section from "../components/Section"
@@ -16,18 +17,34 @@ import Badge from "../components/Badge"
 import Flex from "../components/flex"
 import Progress from "../components/Progress"
 import loadData from "../utils/loadData"
+import { withTrans } from "../i18n/withTrans"
+
+const toPrint = (style, size = "medium", op = "greaterThan") => {
+  const _css = typeof style === "string" ? css([style]) : style
+  return css`
+    ${media[op](size)(_css)}
+    @media print {
+      ${_css}
+    }
+  `
+}
 
 const Float = styled.span`
   float: right;
 `
 
 const Container1 = styled.div`
-  width: 60%;
-  padding: 0 ${props => props.theme.padding};
+  padding: 0 ${({ theme }) => theme.padding};
+  ${toPrint(css`
+    width: 60%;
+  `)}
 `
+
 const Container2 = styled.div`
-  width: 40%;
-  padding: 0 ${props => props.theme.padding};
+  padding: 0 ${({ theme }) => theme.padding};
+  ${toPrint(css`
+    width: 40%;
+  `)}
 `
 
 var ageDifMs = Date.now() - Date.UTC(1992, 10, 24, 3, 0, 0)
@@ -42,23 +59,34 @@ const Contato = styled.div`
   flex: 1;
 `
 const Link = styled.a`
-  color: #000;
+  color: var(--color-text);
   text-decoration: none;
   &:hover {
-    color: ${props => props.theme.colors.primary};
+    color: var(--color-primary);
   }
 `
 
-const Header = styled(p => (
+const ContatoWrapper = styled.div`
+  > div {
+    margin: 0.25rem 0;
+  }
+  ${toPrint(css`
+    display: flex;
+    justify-content: "space-between";
+  `)}
+`
+
+const Header = withTrans(styled(({ t, ...p }) => (
   <div {...p}>
     <FullName>Carlos Henrique Rabelo de Oliveira</FullName>
     <p>
-      <FaFlag /> Brazilian, Single, {age} years
+      <FaFlag /> {t("about.nationality")}, {t("about.relationship")}, {age}{" "}
+      {t("about.years")}
     </p>
     <p>
       <FaMapMarkedAlt /> R. Cláudio Soares, 101 - Pinheiros, São Paulo - SP
     </p>
-    <Flex style={{ justifyContent: "space-between" }}>
+    <ContatoWrapper>
       <Contato>
         <Link
           target="_blank"
@@ -77,7 +105,7 @@ const Header = styled(p => (
           <FaLinkedin /> /carloshrabelo
         </Link>
       </Contato>
-    </Flex>
+    </ContatoWrapper>
   </div>
 ))`
   padding: 1rem;
@@ -86,7 +114,7 @@ const Header = styled(p => (
     margin: 0.25rem 0;
   }
   svg {
-    fill: ${props => props.theme.colors.primary};
+    fill: ${(props) => props.theme.colors.primary};
   }
 
   @media print {
@@ -94,7 +122,7 @@ const Header = styled(p => (
       margin: 0.5rem 0;
     }
   }
-`
+`)
 
 const IndexPage = () => {
   const { t } = useTranslation()
@@ -107,7 +135,8 @@ const IndexPage = () => {
 
   return (
     <>
-      <SEO title={t("home.title")} />
+      <SEO title={t("curriculum")} />
+
       <Header></Header>
       <Flex>
         <Container1>
@@ -133,17 +162,17 @@ const IndexPage = () => {
           <Section title="IDIOMAS">
             <div>
               <p>
-                Português
-                <Float>Nativo</Float>
+                {t("portuguese")}
+                <Float>{t("native")}</Float>
               </p>
             </div>
             <Progress value="100" max="100" />
             <div>
               <p>
-                Inglês
-                <Float>Intermediário</Float>
+                {t("english")}
+                <Float> {t("intermediate")}</Float>
               </p>
-              <Progress value="60" max="100" />
+              <Progress value="65" max="100" />
             </div>
           </Section>
           <Section title="PROJETOS" data={projects} />

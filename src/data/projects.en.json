@@ -1,22 +1,22 @@
 [
   {
     "role": "Ada - PagSeguro",
-    "about": "A plataforma de atendimento Ada disponibiliza informações sensíveis de clientes aos atendentes, vindas de diversos setores da empresa PagSeguro.",
+    "about": "The Ada service platform provides accessible customer information to attendants from different sectors of the PagSeguro company.",
     "description": [
-      "Desenvolvimento com React / Redux sobre NodeJs com arquitetura modular",
-      "Criação/Integração WebServices em NodeJs."
+      "Development with React / Redux on NodeJs with modular architecture",
+      "Creation / Integration of WebServices in NodeJs."
     ]
   },
   {
-    "role": "Identificação Biométrica (TSE)",
-    "about": "Projeto de combate a fraudes eleitorais, por meio de análises biométricas.",
+    "role": "Biometric Identification (TSE)",
+    "about": "Project to combat electoral fraud by means of biometric analyzes.",
     "description": [
-      "Customização do OBIEE.",
-      "Criação de webapps integradas ao OBIEE."
+      "Customization of OBIEE.",
+      "Creation of web applications integrated with OBIEE."
     ]
   },
   {
     "role": "Metroplan",
-    "about": "Desenvolvimento de aplicações SIGWeb integradas com Oracle Apex para disponibilização de informações geoespaciais dos projetos aulinor e baixo cai."
+    "about": "Development of SIGWeb applications integrated with Oracle Apex to provide geospatial information on aulinor and Baixo Cai projects."
   }
 ]

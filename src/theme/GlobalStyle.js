@@ -1,14 +1,20 @@
 import { createGlobalStyle } from "styled-components"
+import variables from "./variables"
 
 export default createGlobalStyle`
+
+  :root{
+    ${variables}
+  }
+
   *, *::before,*::after{
     box-sizing: border-box;
   }
   html,body{
     height:100%;
-    font-family:  ${props => props.theme.fonts.join(", ")}; 
+    font-family:  ${(props) => props.theme.fonts.join(", ")}; 
     font-size: 16px;
-    background-color: ${props => props.theme.bg};
+    background-color: ${(props) => props.theme.bg};
   }
 
   h1, h2, h3, h4, h5, h6{
@@ -20,11 +26,12 @@ export default createGlobalStyle`
   }
   #___gatsby {
     &{
-    height:100%;
+    min-height:100%;
       
     }
     > div {
-    height:100%;
+    min-height:100%;
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-grow: 1;
@@ -48,7 +55,7 @@ export default createGlobalStyle`
   }
 
   strong{
-    color: ${props => props.theme.colors.primary};
+    color: ${(props) => props.theme.colors.primary};
     font-weight: 500;
   }
 

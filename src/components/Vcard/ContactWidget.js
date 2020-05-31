@@ -9,6 +9,7 @@ const ContactWidget = styled(Widget)`
   padding-top: 10px;
 `
 const Social = styled.ul`
+  margin: 2rem 0;
   li {
     padding: 10px 0;
     list-style: none;
@@ -37,21 +38,20 @@ const Contact = ({ title }) => (
     <Social>
       <li>
         <FaMapMarkedAlt /> R. Cláudio Soares, 101 - Pinheiros São Paulo - SP
-        05422-030
       </li>
       <li>
-        <FaMobileAlt />
         <Link
           href="https://api.whatsapp.com/send?phone=5561982770330"
           target="_blank"
           rel="noopener noreferrer"
         >
+          <FaMobileAlt />
           +55 (61) 9 8277-0330
         </Link>
       </li>
       <li>
-        <FaEnvelopeOpen />
         <Link href="mailto:carloshrabelo@hotmail.com">
+          <FaEnvelopeOpen />
           carloshrabelo@hotmail.com
         </Link>
       </li>
