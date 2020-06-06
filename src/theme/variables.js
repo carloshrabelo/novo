@@ -23,6 +23,6 @@ export default css`
 
   --nav-bg: #576574;
   --nav-color: #c8d6e5;
-  --nav-color-hover: #8395a7;
+  --nav-color-hover: #fff;
   --nav-width: 6rem;
 `

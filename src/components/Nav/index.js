@@ -18,12 +18,12 @@ export default () => {
             {t("curriculum")}
           </Link>
         </S.Li>
-        <S.Li>
+        {/* <S.Li>
           <Link to="/">
             <FaFolderOpen />
             Portifolio
           </Link>
-        </S.Li>
+        </S.Li> */}
         <S.About>
           <Link to="/cv">
             <FaUserAlt />

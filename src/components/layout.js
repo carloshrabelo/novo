@@ -44,7 +44,7 @@ const Logo = styled.img`
 `
 
 const Container = styled.div`
-  margin-top: 0rem;
+  margin-top: 40px;
   margin-left: calc(var(--aside-width) + var(--nav-width));
   padding: 1rem;
   flex: 1;
@@ -75,7 +75,7 @@ const Layout = ({ children }) => (
     <GlobalStyle />
     <Top>
       <Language />
-      <Asdf to="/" >
+      <Asdf to="/">
         <Avatar
           src={avatar}
           alt="Profile"

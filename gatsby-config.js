@@ -1,10 +1,9 @@
 const path = require("path")
 
 module.exports = {
-  pathPrefix: "/novo",
   siteMetadata: {
     title: `Carlos Henrique Rabelo`,
-    description: `Site pessoal e blog de um desenvolvedor Front-end apaixonado por criar coisas e compartilhar boas idéias.`,
+    description: `Site pessoal de Engenheiro Front-End, sempre em busca do conhecimento.`,
     author: `@carloshrabelo`,
   },
   plugins: [
@@ -60,6 +59,6 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }
