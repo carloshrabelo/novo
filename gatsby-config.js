@@ -1,6 +1,7 @@
 const path = require("path")
 
 module.exports = {
+  pathPrefix: "/novo",
   siteMetadata: {
     title: `Carlos Henrique Rabelo`,
     description: `Site pessoal e blog de um desenvolvedor Front-end apaixonado por criar coisas e compartilhar boas idéias.`,

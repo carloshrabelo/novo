@@ -1,7 +1,7 @@
 // import React from "react"
 import { useTranslation } from "react-i18next"
 
-export default filename => {
+export default (filename) => {
   const { i18n } = useTranslation()
   const lang = i18n.language.toLocaleLowerCase()
   const json = require(`../data/${filename}.json`)
@@ -13,9 +13,13 @@ export default filename => {
   } catch {}
 
   if (i18nJson)
-    _json = json.map((d, k) => ({
-      ...d,
-      ...i18nJson[k],
-    }))
+    _json = json.map((d, k) =>
+      typeof d === "string"
+        ? i18nJson[k]
+        : {
+            ...d,
+            ...i18nJson[k],
+          }
+    )
   return _json
 }

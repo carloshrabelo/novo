@@ -76,8 +76,8 @@ const ContatoWrapper = styled.div`
   `)}
 `
 
-const Header = withTrans(styled(({ t, ...p }) => (
-  <div {...p}>
+const Header = withTrans(styled(({ t, className }) => (
+  <div className={className}>
     <FullName>Carlos Henrique Rabelo de Oliveira</FullName>
     <p>
       <FaFlag /> {t("about.nationality")}, {t("about.relationship")}, {age}{" "}
@@ -140,16 +140,16 @@ const IndexPage = () => {
       <Header></Header>
       <Flex>
         <Container1>
-          <Section title="EXPERIÊNCIA PROFISSIONAL" data={experience} />
-          <Section title="CERTIFICADOS" dateShort data={certificates} />
-          <Section title="TECNOLOGIAS">
+          <Section title={t("professional experience")} data={experience} />
+          <Section title={t("certificates")} dateShort data={certificates} />
+          <Section title={t("technologies")}>
             <Flex>
               {technologies.map((technologie, key) => (
                 <Badge key={key}>{technologie}</Badge>
               ))}
             </Flex>
           </Section>
-          <Section title="CONHECIMENTOS">
+          <Section title={t("languages")}>
             <Flex>
               {knowledges.map((knowledge, key) => (
                 <Badge key={key}>{knowledge}</Badge>
@@ -159,7 +159,7 @@ const IndexPage = () => {
         </Container1>
         <Container2>
           <Formation></Formation>
-          <Section title="IDIOMAS">
+          <Section title={t("languages")}>
             <div>
               <p>
                 {t("portuguese")}
@@ -175,7 +175,7 @@ const IndexPage = () => {
               <Progress value="65" max="100" />
             </div>
           </Section>
-          <Section title="PROJETOS" data={projects} />
+          <Section title={t("projects")} data={projects} />
         </Container2>
       </Flex>
     </>

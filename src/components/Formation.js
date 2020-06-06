@@ -11,7 +11,7 @@ const IndexPage = () => {
   const education = loadData("education")
 
   return (
-    <Section title={t("formacao")}>
+    <Section title={t("formation")}>
       {education.map(({ institution, date, courses }, key) => (
         <div key={key}>
           {date && <Period date={date} dateShort></Period>}

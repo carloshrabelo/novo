@@ -15,7 +15,7 @@ const language =
       navigator.userLanguage
     : ""
 
-const lng = language.includes("pt") ? "pt-BR" : "en"
+const lng = language.includes("en") ? "en" : "pt-BR"
 
 i18next.init({
   lng,

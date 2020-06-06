@@ -1,12 +1,18 @@
 {
   "contacts": "contatos",
   "current": "atual",
-  "formacao": "formação",
+  "formation": "formação",
   "portuguese": "Português",
+  "languages": "idiomas",
+  "professional experience": "Experiência Profissional",
   "english": "Inglês",
   "native": "Nativo",
   "intermediate": "Intermediário",
   "curriculum": "Currículo",
+  "projects": "projetos",
+  "certificates": "certificados",
+  "technologies": "tecnologias",
+  "knowledge": "conhecimentos",
   "about": {
     "desc": "Engenheiro front-end e zoukeiro nas horas vagas. Assim como a dança, codificação também é uma forma de arte.",
     "relationship": "Solteiro",
@@ -14,3 +20,5 @@
     "years": "anos"
   }
 }
+
+

@@ -6,25 +6,41 @@ import GlobalStyle from "../theme/GlobalStyle"
 import Language from "./languageMenu"
 import Vcard from "./Vcard"
 import Nav from "./Nav"
+import Avatar from "./Avatar"
 
 import { withTrans } from "../i18n/withTrans"
 import media from "styled-media-query"
+import logo from "../images/logo.png"
+import avatar from "../images/avatar.png"
 
-const L = styled(Language)`
-  background: ${(prop) => prop.theme.bg};
-  box-shadow: 0px 3px 10px 3px ${(prop) => prop.theme.bg};
+import { Link } from "gatsby"
+
+const Top = styled.div`
+  color: #fff;
+  background: var(--aside-bg);
   top: 0;
-  text-align: right;
   position: fixed;
-  width: 100%;
-  font-size: 32px;
+  padding: 0.5rem 2rem;
+  left: var(--aside-width);
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
 
-  right: 1rem;
-  width: auto;
+  ${media.lessThan("large")`
+    left: 0;
+  `}
 
   @media print {
     display: none;
   }
+`
+const Logo = styled.img`
+  height: 20px;
+  ${media.greaterThan("large")`
+      display: none
+  `}
 `
 
 const Container = styled.div`
@@ -45,14 +61,33 @@ const Container = styled.div`
     }
   }
 `
+
+const Asdf = styled(Link)`
+  display: flex;
+  align-items: center;
+
+  ${media.greaterThan("large")`
+      display: none
+  `}
+`
 const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
     <GlobalStyle />
-    <L />
-    <Vcard
-      avatar="https://s.gravatar.com/avatar/798d84a4d3f2bbcf5542d3ebbfd4df32?s=480"
-      name="Carlos Henrique"
-    />
+    <Top>
+      <Language />
+      <Asdf to="/" >
+        <Avatar
+          src={avatar}
+          alt="Profile"
+          style={{
+            width: "40px",
+            marginRight: "10px",
+          }}
+        />
+        <Logo src={logo} />
+      </Asdf>
+    </Top>
+    <Vcard avatar={avatar} name="Carlos Henrique" />
     <Nav />
     <Container>{children}</Container>
   </ThemeProvider>

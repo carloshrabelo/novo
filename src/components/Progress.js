@@ -2,6 +2,7 @@
 import React from "react"
 import styled, { css } from "styled-components"
 import { useState } from "react"
+import VisibilitySensor from "react-visibility-sensor"
 
 const barProgress = css`
   background-color: #eee;
@@ -54,11 +55,13 @@ const Progress = styled.progress`
 
 const Flex = ({ className, children, value, ...props }) => {
   const [_value, setValue] = useState(0)
-  setTimeout(() => setValue(value))
+  const updateValue = (e) => e && _value !== value && setValue(value)
   return (
-    <Progress value={_value} className={className} {...props}>
-      {children}
-    </Progress>
+    <VisibilitySensor onChange={updateValue}>
+      <Progress value={_value} className={className} {...props}>
+        {children}
+      </Progress>
+    </VisibilitySensor>
   )
 }
 

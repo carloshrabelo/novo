@@ -6,10 +6,9 @@ export const Nav = styled.nav`
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 4.5rem;
 
   ${media.greaterThan("large")`
-    top:0;
+    top:40px;
     left:var(--aside-width);
     width: var(--nav-width);
   `}
@@ -29,6 +28,7 @@ export const Nav = styled.nav`
     ${media.lessThan("large")`
       display: flex;
       justify-content: space-around;
+      font-size: 12px;
     `}
 
     a {
@@ -50,6 +50,11 @@ export const Nav = styled.nav`
       font-size: 2rem;
       display: block;
       margin: 0 auto;
+
+      ${media.lessThan("large")`
+        font-size: 20px;
+        margin-bottom: 2px;
+    `}
     }
   }
 `
